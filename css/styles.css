@@ -10,11 +10,32 @@
   margin: 0;
 }
 
+body {
+  background-color: var(--white-gray);
+}
+
 html {
   font-family: "Montserrat", sans-serif;
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
+}
+
+.aboutme {
+  padding: 0 0.75rem;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.skills {
+  padding: 0 0.75rem;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.skills img {
+  max-height: 100px;
+  max-width: 100px;
 }
 
 .break {
@@ -78,6 +99,7 @@ a {
 }
 
 .content {
+  padding-top: 64px;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -86,22 +108,21 @@ a {
   justify-content: center;
 }
 
-#intro {
-  padding-top: 64px;
-  background-color: var(--white-gray);
+.intro-text {
+  padding: 0.75rem;
 }
 
 .intro-text-info {
   font-size: 1.5rem;
-  animation: slide-left 2.7s;
+  animation: slide-right 2.7s;
 }
 
-@keyframes slide-left {
+@keyframes slide-right {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
   }
   50% {
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
   }
   100% {
     transform: translateX(0vw);
@@ -112,19 +133,19 @@ a {
   max-height: 500px;
   max-width: 500px;
   border-radius: 50%;
-  margin-right: 2rem;
-  animation: roll-right 2.7s;
+  padding: 0 0.75rem;
+  animation: roll-left 2.7s;
 }
 
-@keyframes roll-right {
+@keyframes roll-left {
   0% {
-    transform: translateX(-100vw);
+    transform: translateX(100vw);
   }
   50% {
-    transform: translateX(-100vw) rotate(0deg);
+    transform: translateX(100vw) rotate(0deg);
   }
   100% {
-    transform: translateX(0vw) rotate(360deg);
+    transform: translateX(0vw) rotate(-360deg);
   }
 }
 
@@ -172,12 +193,7 @@ a {
   transition: ease-in-out 0.2s;
 }
 
-.dropdown-button:hover {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-  font-weight: bold;
-  cursor: pointer;
-}
+.dropdown-button:hover,
 .dropdown-button:focus {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
@@ -188,7 +204,8 @@ a {
   border-left: 1px solid var(--primary-color);
 }
 
-.dropdown-button:focus + .dropdown-list {
+.dropdown:hover .dropdown-list,
+.dropdown:focus .dropdown-list {
   display: flex;
   flex-direction: column;
 }
