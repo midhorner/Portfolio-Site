@@ -31,11 +31,15 @@ html {
   padding: 0 0.75rem;
   max-width: 500px;
   max-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills img {
   max-height: 100px;
   max-width: 100px;
+  margin: 0.5rem;
 }
 
 .break {
