@@ -75,6 +75,8 @@
               in a professional environment alongside other creative and
               passionate programmers.
             </strong>
+            <br />
+            <br />
             <small>
               <a href="https://www.academypgh.com/" target="_blank"
                 ><img src="img/academy_logo.png" /> Academy Pittsburgh</a
@@ -91,10 +93,12 @@
           <div class="icon-grid">
             <div class="icon-card">
               <img src="img/blazor_logo.png" />
+              <div class="break"></div>
               <p>Blazor</p>
             </div>
             <div class="icon-card">
               <img src="img/bootstrap_logo.png" />
+              <div class="break"></div>
               <p>Bootstrap</p>
             </div>
             <div class="icon-card">
@@ -145,44 +149,47 @@
       <section class="content" id="contact">
         <div class="contact">
           <h1>Contact Me</h1>
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/meqvrqvy"
-            method="POST"
-          >
-            <input
-              type="text"
-              id="name-input"
-              name="name-input"
-              class="name-input"
-              required
-              placeholder="Your Name"
-            />
-            <input
-              type="email"
-              id="email-input"
-              name="email-input"
-              class="email-input"
-              required
-              placeholder="Your Email"
-            />
-            <input
-              type="text"
-              id="subject-input"
-              name="subject-input"
-              class="subject-input"
-              required
-              placeholder="Subject"
-            />
-            <textarea
-              class="msg-input"
-              name="msg-input"
-              id="msg-input"
-              required
-              placeholder="Your Message"
-            ></textarea>
-            <button type="submit">Send</button>
-          </form>
+          <div class="contact-form">
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/meqvrqvy"
+              method="POST"
+            >
+              <h3>Send me a message!</h3>
+              <input
+                type="text"
+                id="name-input"
+                name="name-input"
+                class="name-input"
+                required
+                placeholder="Your Name"
+              />
+              <input
+                type="email"
+                id="email-input"
+                name="email-input"
+                class="email-input"
+                required
+                placeholder="Your Email"
+              />
+              <input
+                type="text"
+                id="subject-input"
+                name="subject-input"
+                class="subject-input"
+                required
+                placeholder="Subject"
+              />
+              <textarea
+                class="msg-input"
+                name="msg-input"
+                id="msg-input"
+                required
+                placeholder="Your Message"
+              ></textarea>
+            </form>
+            <button type="submit" form="contactForm">Send</button>
+          </div>
         </div>
       </section>
     </div>

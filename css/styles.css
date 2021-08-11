@@ -29,6 +29,10 @@ html {
 
 .content h1 {
   margin-bottom: 2rem;
+  letter-spacing: 5px;
+  color: var(--secondary-color);
+  border-left: 2px solid var(--secondary-color);
+  padding-left: 3rem;
 }
 
 input:focus,
@@ -36,11 +40,7 @@ textarea:focus,
 select:focus {
   outline: none;
   border: 2px solid #499bca;
-  box-shadow: 0 0 3px 3px #499bca;
-}
-
-.contact-form button {
-  margin: 0 auto;
+  box-shadow: 0 0 3px 1px #499bca;
 }
 
 input,
@@ -52,13 +52,49 @@ textarea {
   border: 2px solid var(--primary-color);
   border-radius: 0.5rem;
   margin: 1rem 0;
-  transition: 0.2s ease-in;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-form input:first-child {
+  margin-top: 0;
 }
 
 .contact-form {
   background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  background-color: #fff;
+}
+
+.contact-form button {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  color: var(--primary-color);
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5rem;
+  margin: 0 auto;
+  transition: ease-in-out 0.1s;
+}
+
+.contact-form button:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.contact-form button:active {
+  transform: scale(0.92);
+  border: 2px solid #499bca;
+  box-shadow: 0 0 3px 1px #499bca;
 }
 
 .aboutme {
@@ -81,6 +117,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .aboutme span {
@@ -109,8 +146,21 @@ form {
 
 .icon-card {
   text-align: center;
-  border-radius: 25%;
+  border-radius: 0.25rem;
   font-size: 0.8rem;
+  padding: 0.5rem;
+  height: 102px;
+  max-width: 102px;
+  transition: ease-out 0.5s;
+}
+
+.icon-card:hover {
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-card p {
+  margin-top: 0.5rem;
+  letter-spacing: normal;
 }
 
 .icon-grid {
@@ -119,7 +169,7 @@ form {
   column-gap: 7%;
   row-gap: 1rem;
   background-color: #fff;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 1rem;
 }
 
@@ -187,6 +237,8 @@ a {
   color: var(--tertiary-color);
   font-size: 1.3rem;
   padding: 0 1rem;
+  letter-spacing: 1px;
+  transition: ease-out 0.2s;
 }
 
 .nav-list-item:hover {
@@ -200,6 +252,7 @@ a {
   align-items: center;
   justify-content: center;
   padding-top: 64px;
+  letter-spacing: 1px;
 }
 
 .intro-text-info {
@@ -240,9 +293,11 @@ a {
 
 .typing-hello h1 {
   overflow: hidden;
-  color: var(--primary-color);
+  text-transform: uppercase;
   white-space: nowrap;
   margin: 1rem 0;
+  border: none;
+  padding: 0;
   animation: typing 3s steps(40, end) 1;
 }
 
