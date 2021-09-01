@@ -8,6 +8,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  caret-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -19,6 +20,42 @@ html {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
+}
+
+.projects {
+  width: 100%;
+}
+
+.project {
+  color: var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+
+.project img {
+  min-width: 275px;
+  max-width: 34%;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.project-info {
+  letter-spacing: 2px;
+}
+
+.project-info h2 {
+  letter-spacing: 5px;
+}
+
+.project-info h3 {
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+  text-align: end;
 }
 
 .container {
@@ -53,6 +90,7 @@ textarea {
   border-radius: 0.2rem;
   margin: 1rem 0;
   transition: ease-in 0.3s;
+  caret-color: var(--primary-color);
 }
 
 .in-line-link {
@@ -125,9 +163,31 @@ button {
   box-shadow: 0 0 3px 1px #499bca;
 }
 
+#random {
+  margin-top: 2rem;
+  width: fit-content;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5rem;
+  transition: ease-in 0.3s;
+}
+
+#random:hover {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+#random:active {
+  transform: scale(0.9);
+}
+
 .aboutme {
   color: var(--primary-color);
-  margin-bottom: 3rem;
 }
 
 .aboutme p {
@@ -143,10 +203,10 @@ form {
 }
 
 .aboutme small {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .aboutme span {
@@ -160,7 +220,7 @@ form {
   align-items: center;
   line-height: 1rem;
   margin-top: 0.5rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .aboutme p a:hover {
@@ -180,7 +240,7 @@ form {
   padding: 0.5rem;
   height: 102px;
   max-width: 102px;
-  transition: ease-in 0.5s;
+  transition: ease-in 0.3s;
 }
 
 .icon-card:hover {
@@ -202,8 +262,12 @@ form {
   border-radius: 1rem;
 }
 
-.skills {
+.icon-card a {
+  cursor: pointer;
   color: var(--primary-color);
+}
+
+.skills {
   width: 100%;
 }
 

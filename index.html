@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio Site</title>
   </head>
@@ -40,7 +41,7 @@
     </header>
     <div class="container">
       <a name="home"></a>
-      <section class="content" id="intro">
+      <section class="content">
         <img
           src="img/PersonalLogoRobot.png"
           alt="main logo of broken robot"
@@ -82,8 +83,8 @@
         </div>
       </section>
       <a name="about"></a>
-      <section class="content" id="info">
-        <div class="aboutme">
+      <section class="content">
+        <div class="aboutme" data-aos="zoom-in" data-aos-duration="1000">
           <h1>About Me</h1>
           <p>
             <strong>
@@ -99,8 +100,7 @@
               in a professional environment alongside other creative and
               passionate programmers.
             </strong>
-            <br />
-            <br />
+
             <small>
               <a href="https://www.academypgh.com/" target="_blank"
                 ><img src="img/academy_logo.png" /> Academy Pittsburgh</a
@@ -111,66 +111,165 @@
             </small>
           </p>
         </div>
-        <div class="skills">
+
+        <div class="skills" data-aos="zoom-out" data-aos-duration="1000">
           <h1>Skills</h1>
           <div class="break"></div>
           <div class="icon-grid">
             <div class="icon-card">
-              <img src="img/blazor_logo.png" />
-              <div class="break"></div>
-              <p>Blazor</p>
+              <a
+                href="https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0"
+                target="_blank"
+                alt="blazor documentation link"
+              >
+                <img src="img/blazor_logo.png" />
+                <div class="break"></div>
+                <p>Blazor</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/bootstrap_logo.png" />
-              <div class="break"></div>
-              <p>Bootstrap</p>
+              <a
+                href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+                target="_blank"
+                alt="bootstrap documentation link"
+              >
+                <img src="img/bootstrap_logo.png" />
+                <div class="break"></div>
+                <p>Bootstrap</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/csharp_logo.png" />
-              <p>C#</p>
+              <a
+                href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+                target="_blank"
+                alt="c sharp documentation link"
+              >
+                <img src="img/csharp_logo.png" />
+                <p>C#</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/css_logo.png" />
-              <p>CSS</p>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                alt="css documentation link"
+              >
+                <img src="img/css_logo.png" />
+                <p>CSS</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/git_logo.png" />
-              <p>Git</p>
+              <a
+                href="https://git-scm.com/doc"
+                target="_blank"
+                alt="git documentation link"
+              >
+                <img src="img/git_logo.png" />
+                <p>Git</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/html_logo.png" />
-              <p>HTML</p>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                alt="html documentation link"
+              >
+                <img src="img/html_logo.png" />
+                <p>HTML</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/jquery_logo.png" />
-              <p>jQuery</p>
+              <a
+                href="https://api.jquery.com/"
+                target="_blank"
+                alt="jquery documentation link"
+              >
+                <img src="img/jquery_logo.png" />
+                <p>jQuery</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/js_logo.png" />
-              <p>JavaScript</p>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                alt="javascript documentation link"
+              >
+                <img src="img/js_logo.png" />
+                <p>JavaScript</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/mongodb_logo.png" />
-              <p>mongoDB</p>
+              <a
+                href="https://docs.mongodb.com/"
+                target="_blank"
+                alt="mongodb documentation link"
+              >
+                <img src="img/mongodb_logo.png" />
+                <p>mongoDB</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/node_logo.png" />
-              <p>nodeJS</p>
+              <a
+                href="https://nodejs.org/en/docs/"
+                target="_blank"
+                alt="node js documentation link"
+              >
+                <img src="img/node_logo.png" />
+                <p>nodeJS</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/react_logo.png" />
-              <p>React</p>
+              <a
+                href="https://reactjs.org/docs/getting-started.html"
+                target="_blank"
+                alt="react documentation link"
+              >
+                <img src="img/react_logo.png" />
+                <p>React</p>
+              </a>
             </div>
             <div class="icon-card">
-              <img src="img/native_logo.PNG" />
-              <p>React Native</p>
+              <a
+                href="https://reactnative.dev/docs/getting-started"
+                target="_blank"
+                alt="react native documentation link"
+              >
+                <img src="img/native_logo.PNG" />
+                <p>React Native</p>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <a name="projects"></a>
+      <section class="content">
+        <div class="projects">
+          <h1>Projects</h1>
+          <div class="project" data-aos="flip-left" data-aos-duration="2000">
+            <img src="img/portfolio-site-thumbnail.png" />
+            <div class="project-info">
+              <h2>Portfolio Website</h2>
+              <h3>HTML, CSS, JavaScript</h3>
+            </div>
+          </div>
+          <div class="project" data-aos="flip-right" data-aos-duration="2000">
+            <img src="img/coeospace-thumbnail.png" />
+            <div class="project-info">
+              <h2>Coeospace.com Landing Page</h2>
+              <h3>Blazor, C#, ASP.NET MVC, JavaScript</h3>
+            </div>
+          </div>
+          <div class="project" data-aos="flip-left" data-aos-duration="2000">
+            <img src="img/react-smoke-site-thumbnail.png" />
+            <div class="project-info">
+              <h2>Smoke BBQ Website</h2>
+              <h3>React, React Router, Redux</h3>
+            </div>
+          </div>
+        </div>
+      </section>
       <a name="contact"></a>
-      <section class="content" id="contact">
+      <section class="content">
         <div class="contact">
           <h1>Contact Me</h1>
           <div class="contact-form">
@@ -217,6 +316,10 @@
         </div>
       </section>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/index.js"></script>
   </body>
 </html>
