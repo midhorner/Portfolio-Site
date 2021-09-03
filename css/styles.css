@@ -29,8 +29,24 @@ a {
 }
 
 button {
-  border: none;
-  background-color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: var(--primary-color);
+  color: var(--white-gray);
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5rem;
+  transition: ease-in 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  transform: scale(0.96);
 }
 
 form {
@@ -79,7 +95,7 @@ select:focus {
 }
 
 .aboutme p a {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--secondary-color);
   display: flex;
   align-items: center;
@@ -88,8 +104,8 @@ select:focus {
   margin-right: 3rem;
 }
 
-.aboutme p a:hover {
-  text-decoration: underline;
+.aboutme p a:last-child {
+  text-decoration: none;
 }
 
 .aboutme p img {
@@ -131,26 +147,7 @@ select:focus {
 }
 
 .contact-form button {
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: var(--primary-color);
-  padding: 0.5rem 2rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 5rem;
   margin: 0 auto;
-  transition: ease-in-out 0.1s;
-}
-
-.contact-form button:hover {
-  cursor: pointer;
-  background-color: var(--primary-color);
-  color: #fff;
-}
-
-.contact-form button:focus {
-  border: 2px solid #499bca;
-  box-shadow: 0 0 3px 1px #499bca;
 }
 
 .contact-form input:first-child {
@@ -280,12 +277,8 @@ select:focus {
 }
 
 .in-line-link {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-.in-line-link:hover {
   text-decoration: underline;
+  color: var(--secondary-color);
 }
 
 .intro-logo {
@@ -324,23 +317,6 @@ select:focus {
   }
 }
 
-.intro-text-info button {
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  background-color: var(--primary-color);
-  color: var(--white-gray);
-  padding: 0.5rem 2rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 5rem;
-  transition: ease-in 0.3s;
-}
-
-.intro-text-info button:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.3);
-}
-
 .intro-text-info p {
   margin-bottom: 1.5rem;
 }
@@ -352,13 +328,14 @@ select:focus {
 .nav-list-item {
   color: var(--tertiary-color);
   font-size: 1.3rem;
-  padding: 0 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
   letter-spacing: 1px;
   transition: ease-out 0.2s;
 }
 
 .nav-list-item:hover {
-  text-decoration: underline;
+  background-color: #183546;
 }
 
 .page-header {
@@ -399,13 +376,13 @@ select:focus {
   background-color: #fff;
   padding: 1rem;
   margin: 2rem 0;
+  align-items: center;
   border-radius: 1rem;
 }
 
 .project img {
   min-width: 275px;
   max-width: 34%;
-  max-height: auto;
   border-radius: 0.5rem;
   margin-right: 1rem;
 }
@@ -447,23 +424,6 @@ select:focus {
 
 #random {
   margin-left: auto;
-  width: fit-content;
-  font-size: 1.3rem;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  color: var(--white-gray);
-  padding: 1rem 2rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 5rem;
-  transition: ease-in 0.3s;
-}
-
-#random:hover {
-  text-decoration: none;
-}
-
-#random:active {
-  transform: scale(0.9);
 }
 
 .skills {
