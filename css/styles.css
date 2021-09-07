@@ -125,11 +125,6 @@ select:focus {
   color: var(--secondary-color);
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
 .contact {
   margin-bottom: 5rem;
 }
@@ -248,8 +243,9 @@ select:focus {
   font-size: 0.8rem;
   padding: 0.5rem;
   height: 102px;
-  max-width: 102px;
+  width: 102px;
   transition: ease-in 0.3s;
+  margin: auto;
 }
 
 .icon-card:hover {
@@ -477,6 +473,21 @@ select:focus {
 }
 
 /* Media Queries */
+@media all and (max-width: 850px) {
+  .project img {
+    min-width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .project-info {
+    margin: 0;
+    width: 100%;
+  }
+  #random {
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
 
 @media all and (max-width: 630px) {
   .dropdown {
@@ -489,5 +500,30 @@ select:focus {
   }
   .nav-list {
     display: none;
+  }
+}
+
+@media all and (max-width: 475px) {
+  .aboutme p {
+    padding: 0;
+    background-color: var(--white-gray);
+    font-size: 1rem;
+  }
+  .aboutme p a {
+    margin: 1rem auto;
+  }
+  .contact-form {
+    padding: 0;
+    background-color: var(--white-gray);
+  }
+  .icon-grid {
+    padding: 0;
+    background-color: var(--white-gray);
+  }
+  .intro-text-info {
+    font-size: 1rem;
+  }
+  .social-links a {
+    margin-left: 1rem;
   }
 }
