@@ -235,15 +235,6 @@ select:focus {
   display: flex;
   align-items: center;
   margin-right: auto;
-  transition: ease-in 3s;
-}
-
-.header-logo-wrap:hover .page-header-logo-initials {
-  display: none;
-}
-
-.header-logo-wrap:hover .page-header-logo-fullname {
-  display: block;
 }
 
 .icon-card {
@@ -369,15 +360,9 @@ select:focus {
   }
 }
 
-.page-header-logo-initials {
+.page-header-logo {
   max-height: 40px;
   margin-left: 1rem;
-}
-
-.page-header-logo-fullname {
-  max-height: 40px;
-  margin-left: 1rem;
-  display: none;
 }
 
 .project {
