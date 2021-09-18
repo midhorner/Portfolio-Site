@@ -31,6 +31,6 @@ const randomLink = () => {
   return LINKS[i];
 };
 
-RANDOM.onmousedown = () => {
+RANDOM.addEventListener("mousedown", () => {
   RANDOM.setAttribute("href", randomLink());
-};
+});
