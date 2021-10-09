@@ -34,15 +34,15 @@ button {
   letter-spacing: 1px;
   background-color: var(--primary-color);
   color: var(--white-gray);
-  padding: 0.5rem 2rem;
-  border: 2px solid var(--primary-color);
+  padding: 0.75rem 2.25rem;
+  border: none;
   border-radius: 5rem;
   transition: ease-in 0.3s;
 }
 
 button:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.5);
+  background-color: #1e4358;
 }
 
 button:active {
@@ -444,7 +444,7 @@ select:focus {
 }
 
 .social-links img:hover {
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px 3px rgba(73, 155, 202, 0.7);
 }
 
 .social-links-wrap {
