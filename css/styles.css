@@ -474,6 +474,12 @@ select:focus {
 
 /* Media Queries */
 @media all and (max-width: 850px) {
+  .dropdown {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+  }
   .project img {
     min-width: 100%;
     margin: 0;
@@ -490,16 +496,10 @@ select:focus {
 }
 
 @media all and (max-width: 630px) {
-  .dropdown {
-    display: block;
-  }
   .intro-logo {
     margin-top: 2rem;
     max-height: 360px;
     max-width: 360px;
-  }
-  .nav-list {
-    display: none;
   }
 }
 
