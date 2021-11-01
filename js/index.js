@@ -27,8 +27,8 @@ const LINKS = [
 ];
 
 const randomLink = () => {
-  let i = Math.floor(Math.random() * LINKS.length);
-  RANDOM.setAttribute("href", LINKS[i]);
+  let randNum = Math.floor(Math.random() * LINKS.length);
+  RANDOM.setAttribute("href", LINKS[randNum]);
 };
 
 RANDOM.addEventListener("mousedown", randomLink);
