@@ -2,6 +2,7 @@
   --primary-color: #0f222d;
   --secondary-color: #a21500;
   --tertiary-color: #fff5d0;
+  --hover-color: #1e4358;
   --white-gray: rgb(235, 235, 235);
 }
 
@@ -42,7 +43,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  background-color: #1e4358;
+  background-color: var(--hover-color);
 }
 
 button:active {
