@@ -282,7 +282,7 @@ select:focus {
   max-height: 500px;
   max-width: 500px;
   border-radius: 50%;
-  animation: roll-left 2.7s;
+  animation: roll-left 3.3s;
 }
 
 @keyframes roll-left {
@@ -299,7 +299,7 @@ select:focus {
 
 .intro-text-info {
   font-size: 1.5rem;
-  animation: slide-right 2.7s;
+  animation: slide-right 3.3s;
 }
 
 @keyframes slide-right {
@@ -344,7 +344,7 @@ select:focus {
   background-color: var(--primary-color);
   padding: 0.75rem 0;
   align-items: center;
-  animation: slide-down 3s;
+  animation: slide-down 3.8s;
 }
 
 @keyframes slide-down {
