@@ -458,6 +458,7 @@ select:focus {
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--secondary-color);
+  font-weight: 600;
   margin: 1rem 0;
   border: none;
   padding: 0;
